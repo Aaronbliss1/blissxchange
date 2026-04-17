@@ -259,10 +259,11 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:56px 52p
 /* ── MOBILE (max 600px) ───────────────────────────────────────── */
 @media(max-width:600px){
   nav{padding:10px 16px;gap:8px}
-  .nav-logo img{height:70px;clip-path:inset(0 0 9px 0)}
+  .nav-logo img{height:65px;clip-path:inset(0 0 9px 0)}
+  nav{gap:6px}
   .nav-brand-name{font-size:14px}
   .nav-actions .btn-ghost{display:none}
-  .btn-orange{font-size:12px;padding:8px 14px}
+  .btn-orange{font-size:11px;padding:7px 11px;border-radius:7px}
 
   .hero{padding:90px 16px 48px}
   .hero-title{font-size:clamp(28px,9vw,40px)}
@@ -314,11 +315,12 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:56px 52p
   .testi-text{font-size:13px}
 
   .cta-wrap{padding:0 16px 48px}
-  .cta-banner{padding:28px 20px;flex-direction:column;gap:24px;text-align:center}
-  .cta-title{font-size:clamp(20px,6vw,28px)}
-  .cta-sub{font-size:14px;max-width:100%}
-  .cta-btns{justify-content:center;flex-direction:column;align-items:stretch}
-  .cta-btns a,.cta-btns button{text-align:center;justify-content:center}
+  .cta-banner{padding:28px 18px;flex-direction:column;gap:20px;text-align:center;border-radius:16px}
+  .cta-content{width:100%}
+  .cta-title{font-size:clamp(18px,6vw,26px);line-height:1.2;margin-bottom:8px}
+  .cta-sub{font-size:13px;max-width:100%;line-height:1.7}
+  .cta-btns{flex-direction:column;align-items:stretch;gap:10px;width:100%}
+  .cta-btns a{width:100%;text-align:center;justify-content:center;display:flex;align-items:center;padding:14px 20px;font-size:14px;box-sizing:border-box}
 
   footer{padding:40px 16px 24px}
   .footer-top{grid-template-columns:1fr;gap:28px}
@@ -644,6 +646,25 @@ body.light .t-moon { opacity: 0; transform: scale(0.5); }
 @media(max-width:600px){
   .tos-modal{padding:28px 18px}
   .tos-modal h2{font-size:18px}
+}
+
+/* ── VERY SMALL SCREENS (max 380px) ─────────────────────────── */
+@media(max-width:380px){
+  .btn-orange{font-size:10px;padding:6px 9px}
+  .nav-logo img{height:56px;clip-path:inset(0 0 7px 0)}
+  .nav-brand-name{font-size:12px}
+  .cta-banner{padding:22px 14px}
+  .cta-title{font-size:18px}
+  .cta-sub{font-size:12px}
+  .cta-btns a{font-size:13px;padding:12px 16px}
+  .btn-hero{font-size:13px;padding:12px 16px}
+  .btn-hero-outline{font-size:13px;padding:12px 16px}
+  .hero-title{font-size:26px}
+  .coin-card{padding:10px 8px;gap:6px}
+  .cc-icon{width:30px;height:30px;min-width:30px;font-size:14px}
+  .cc-name{font-size:10px}
+  .cc-val{font-size:10px}
+  .cc-price{min-width:52px}
 }
 </style>
 </head>
